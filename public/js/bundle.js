@@ -1,0 +1,1 @@
+"use strict";var a="one";console.log("12345",a);var b="two";console.log(b);
