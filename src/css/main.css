@@ -1,0 +1,26 @@
+body {
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+.content-block {
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    border: solid white 1px;
+    max-width: 750px;
+    padding: 20px;
+    text-align: left;
+    /*margin-top: -500px;*/
+    z-index: 6;
+    height: 100vh;
+}
+
+.section {
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
