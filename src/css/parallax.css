@@ -32,8 +32,15 @@
     transform: translateZ(0);
     z-index: 4;
 }
+
+.parallax__layer--base-2 {
+    transform: translateZ(0);
+    z-index: 4;
+}
+
+
 .parallax__layer--back {
-    transform: translateZ(-300px) scale(1);
+    transform: translateZ(-300px) scale(1.0);
     /*background-image: url("http://www.hotel-r.net/im/hotel/cy/blue-skies-7.jpg");*/
     background-size: cover;
     z-index: 3;
