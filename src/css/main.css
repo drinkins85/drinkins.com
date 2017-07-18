@@ -63,9 +63,11 @@ body {
 
 .list__cols_three li {
     display: inline-block;
-    width: 32%;
+   /* width: 32%; */
     text-align: center;
     box-sizing: border-box;
+    margin: 0.5em;
+
 }
 
 .text_color_light {
@@ -77,14 +79,23 @@ body {
     height: 150px;
     border-radius: 75px;
     background-color: antiquewhite;
-    display: inline-block;
     text-align: center;
     overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .circle_size_150 .circle__img {
     max-width: 100px;
     width: 100%;
+}
+
+.circle__text {
+    display: none;
+}
+
+.circle_size_150:hover {
+    background-color: cyan;
 }
 
 
