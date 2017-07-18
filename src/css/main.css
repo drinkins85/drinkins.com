@@ -21,6 +21,17 @@ body {
     margin: auto;
 }
 
+.section__second{
+    background-color: #f0d198;
+    position: absolute;
+    bottom: -150px; left: 0;
+    right: 0;
+    width: 100%;
+  /*  height: 200px; */
+    background-image: url("../img/bg_2.jpg");
+    background-size: cover;
+}
+
 .text-center {
     text-align: center;
 }
@@ -29,4 +40,68 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.img__pilot {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    max-width: 300px;
+    min-width: 150px;
+    width: 20%;
+}
+
+.list__cols_three {
+    margin:0;
+    padding:0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+
+.list__cols_three li {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.text_color_light {
+    color: antiquewhite;
+}
+
+.circle_size_150 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: antiquewhite;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.circle_size_150 .circle__img {
+    max-width: 100px;
+    width: 100%;
+}
+
+
+@media (max-width: 500px) {
+    .section__first{
+        padding-right: 100px;
+    }
+    .img__pilot {
+        right: -50px;
+        bottom: -50px;
+    }
+
+    .circle_size_150 {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+    }
+
+
 }
