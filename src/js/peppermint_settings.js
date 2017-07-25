@@ -4,7 +4,7 @@
 
 let peppermintSettings = {
     //скорость перехода между слайдами, мс
-    speed: 300,
+    speed: 600,
 
     //скорость перехода между слайдами после тача, мс
     touchSpeed: 300,
@@ -13,10 +13,10 @@ let peppermintSettings = {
     slideshow: true,
 
     //интервал переключения слайдов, мс
-    slideshowInterval: 4000,
+    slideshowInterval: 8000,
 
     //останавливать слайдшоу после переключения слайда пользователем
-    stopSlideshowAfterInteraction: false,
+    stopSlideshowAfterInteraction: true,
 
     //начальный слайд
     startSlide: 0,
