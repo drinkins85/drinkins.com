@@ -10,7 +10,8 @@
 
 .parallax_bg_sky {
     background-color: #02c9f3;
-    background-image: url("../img/sky-bg.jpg");
+    background-image: url("../img/skybg.jpg");
+    background-size: cover;
 }
 
 .parallax__group {
