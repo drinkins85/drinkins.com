@@ -1,3 +1,4 @@
+
 .modal-window {
 
     position: fixed;
@@ -164,7 +165,6 @@
     overflow: hidden;
     height: 100%;
 }
-
 @media only screen and (max-width: 1200px) {
 
     .modal-window__container{
