@@ -54,4 +54,6 @@ let peppermintSettings = {
     onSetup: undefined
 };
 
+
+
 let slider = Peppermint(document.getElementById('peppermint'), peppermintSettings);

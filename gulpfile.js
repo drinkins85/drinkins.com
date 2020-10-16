@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const babel = require('gulp-babel');
 const csso = require('gulp-csso');
 const uglify = require('gulp-uglify');
-const runSequence = require('run-sequence');
+const runSequence = require('gulp4-run-sequence');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const concatCss = require('gulp-concat-css');
@@ -58,14 +58,17 @@ gulp.task('6-css-min', function () {
         .pipe(gulp.dest('public/css/'));
 });
 
-gulp.task('7-clean', function() {
-    return del.sync('temp');
+gulp.task('7-clean', function(done) {
+    del.sync('temp');
+    done();
 });
 
-gulp.task('svgo', function() {
+gulp.task('svgo', function(done) {
     gulp.src('src/img/*.svg')
         .pipe(svgo())
         .pipe(gulp.dest('public/img'));
+
+    done();
 });
 
 gulp.task('watch', function() {
@@ -74,8 +77,9 @@ gulp.task('watch', function() {
     gulp.watch('src/**/*.html', ['build-HTML']);
 });
 
-gulp.task('build-HTML', function () {
+gulp.task('build-HTML', function (done) {
     gulp.src('./src/*.html')
         .pipe(htmlImport('./src/components/'))
         .pipe(gulp.dest('public'));
+    done();
 });

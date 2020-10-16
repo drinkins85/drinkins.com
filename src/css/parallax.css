@@ -17,7 +17,7 @@
 .parallax__group {
     position: relative;
     height: 500px; /* fallback for older browsers */
-    height: 100vh;
+    min-height: 100vh;
     transform-style: preserve-3d;
     /*transform: translate3d(700px, 0, -800px) rotateY(30deg);*/
 }
