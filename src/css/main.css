@@ -37,6 +37,10 @@ a:hover {
     margin: auto;
 }
 
+.skills {
+    margin-top: 330px;
+}
+
 .section__second{
     background-color: #f0d198;
     position: absolute;
@@ -49,6 +53,29 @@ a:hover {
     overflow: hidden;
 }
 
+.section__job {
+    position: absolute;
+    bottom: -265px;
+    right: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .3);
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 20px 2%;
+    align-items: stretch;
+    height: 113px;
+}
+
+.section__job div {
+    padding: 0 10px;
+    display: flex;
+}
+
+.section__job img {
+    width: 100%;
+    margin: auto;
+}
 
 .text-center {
     text-align: center;
@@ -71,7 +98,6 @@ a:hover {
     text-align: center;
 
 }
-
 
 .list__cols_three li {
     display: inline-block;
@@ -244,6 +270,10 @@ img.phone {
     .img__pilot {
         right: -50px;
         bottom: -50px;
+    }
+
+    .skills {
+        margin-top: 150px;
     }
 
     .circle_size_150 {
